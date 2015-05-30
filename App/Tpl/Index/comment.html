@@ -1,0 +1,17 @@
+<include file="Public:head" />
+<body>
+<div data-role="page" >
+    <form name="form" id="form" method="post" target="_self" action="__URL__/addComment">
+    <div data-role="header" data-theme="b" data-position="fixed" data-position="inline">
+        <a  data-rel="back">返回</a>
+        <input type="button" data-role="none" id="sendComment" class="send" value="发送"/>
+        <h1 class="top">编辑评论</h1>
+    </div>
+        <section class="sendText">
+            <div class="">
+                <textarea data-role="none" name="commentBody" class="inputBlog" id="inputcomment" rows="6" placeholder="请输入评论" required></textarea>
+            </div>
+        </section>
+    </form>
+
+    <include file="Public:footer" />

@@ -1,0 +1,39 @@
+    <include file="Public:head" />
+<body>
+
+<div data-role="page" >
+    <div data-role="header" data-theme="b">
+        <h1>我的信息</h1>
+    </div>
+    <section class="">
+        <!-- <img class="zmpic" src="image/zm.jpg" alt=""/> -->
+    </section>
+
+    <section class="userInfo">
+        <div class="personLeft"><img class="avatarpic" src="__PUBLIC__/image/avatar/<{$userInfo.user_avatar}>" alt="默认头像"/></div>
+        <div class="info">
+            <div><{$userInfo.user_name}></div>
+            <div><{$userInfo.user_school}><{$userInfo.user_grade}></div>
+            <div data-role="none"><a target="_self" href="__APP__/Personal/personalInfo?userId=<{$Think.session.userId}>">查看资料</a></div>
+        </div>
+        <div class="blank"></div>
+    </section>
+
+    <section class="interest">
+        <div class="tag tagline"><a href="__URL__/followList">关注(11)</a></div>
+        <div class="tag tagline"><a href="__URL__/myBlog?userId=<{$userInfo.user_id}>">心情(11)</a></div>
+        <div class="tag">RP点(<{$userInfo.user_rp}>)</div>
+        <div class="blank"></div>
+    </section>
+
+    <section class="type">
+        <div><a href="__URL__/showSecret" target="_self"><div class="typeIcon"><img class="littleIcon" src="__PUBLIC__/image/secret.png" /><span class="iconText">小秘密</span></div></a></div>
+        <div><a href="__URL__/showHelp" target="_self"><div class="typeIcon line"><img class="littleIcon" src="__PUBLIC__/image/help.png" /><span class="iconText">帮帮忙</span></div></a></div>
+        <div><a href="__URL__/myBlog?userId=<{$Think.session.userId}>" target="_self"><div class="typeIcon"><img class="littleIcon" src="__PUBLIC__/image/mood.png" /><span class="iconText">随心记</span></div></a></div>
+    </section>
+
+    <div class="submit">
+        <input class="logout" type="button" id="logout" data-role="none" value="退出" />
+    </div>
+
+    <include file="Public:footer" />

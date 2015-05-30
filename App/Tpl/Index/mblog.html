@@ -1,0 +1,33 @@
+<include file="Public:head" />
+<body>
+
+<div data-role="page" >
+    <form name="form" id="form" method="post" target="_self" action="__APP__/Index/addBlog"  enctype="multipart/form-data">
+    <div data-role="header" data-theme="b" data-position="fixed" data-position="inline">
+        <a  data-rel="back">返回</a>
+        <!--<span class="send">发送</span>-->
+        <input type="submit" data-role="none" class="send" value="发送"/>
+        <h1 class="top">编辑发布</h1>
+    </div>
+
+    <!--<form name="form" id="form" method="post" action="#">-->
+        <section class="sendText">
+            <div class="">
+                <textarea data-role="none" name="blogContent" class="inputBlog" rows="6" placeholder="请输入文字" required></textarea>
+            </div>
+            <div class="blogType">
+                <div class="blogTypeName"><input data-role="none" type="radio" id="mood" name="sendType" value="mood"   />发心情</div>
+                <div class="blogTypeName"><input data-role="none" type="radio" id="help" name="sendType" value="help" checked />求帮助</div>
+                <div class="blogTypeName"><input data-role="none" type="radio" id="secret" name="sendType" value="secret" />小秘密</div>
+                <div class="blank"></div>
+            </div>
+        </section>
+
+        <div class="pic">
+            <div class="picIcon"><img src="__PUBLIC__/image/+.png" alt=""/></div>
+            <input type="file"  data-role="none" name="pic" id="picFile"  class="picUpload" onchange="preview(),send()"/>
+            <!-- <div class="blank"></div> -->
+        </div>
+    </form>
+
+    <include file="Public:footer" />

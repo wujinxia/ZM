@@ -1,0 +1,85 @@
+<include file="Public:head" />
+<body>
+
+<div data-role="page" >
+    <div data-role="header" data-theme="b">
+        <if condition="$userInfo.user_id eq $Think.session.userId "><div class="save" >保存</div>
+            <else />
+        </if>
+        <h1>我的信息</h1>
+    </div>
+    <section class="">
+        <!-- <img class="zmpic" src="image/zm.jpg" alt=""/> -->
+    </section>
+    <section class="changeAvatarTip">
+        <if condition="$userInfo.user_id eq $Think.session.userId "><div>点击图片换头像</div>
+            <else />
+        </if>
+    </section>
+    <section class="userInfo">
+        <if condition="$userInfo.user_id eq $Think.session.userId "><form method="post" class="change" data-role="none" target="_self" action="__APP__/Personal/changeAvatar" enctype="multipart/form-data">
+            <else />
+        </if>
+        <div class="personLeft">
+            <img class="avatarpic" src="__PUBLIC__/image/avatar/<{$userInfo.user_avatar}>" alt="默认头像"/>
+            <if condition="$userInfo.user_id eq $Think.session.userId "><input class="changeAvatar" type="file" name="avatar" data-role="none" />
+                <else />
+            </if>
+
+        </div>
+        <div class="info">
+            <div><{$userInfo.user_name}></div>
+
+            <if condition="$userInfo.user_id eq $Think.session.userId "><div><div  id="updateInfo" data-role="none">编辑资料</div></div><div><input class="changeButton" data-role="none" type="submit" value="上传头像"/></div>
+                <else /><div><{$userInfo.user_school}></div>
+            </if>
+        </div>
+        <div class="blank"></div>
+        <if condition="$userInfo.user_id eq $Think.session.userId "></form>
+            <else />
+        </if>
+    </section>
+
+
+
+    <section class="personalInfo">
+        <div class="editInfo">
+            <span class="infotag">姓名：</span>
+            <span class="infoContent" id="userName"><{$userInfo.user_name}></span>
+        </div>
+        <div class="editInfo">
+            <span class="infotag">性别：</span>
+            <span class="infoContent"><{$userInfo.user_sex}></span>
+        </div>
+        <div class="editInfo">
+            <span class="infotag">学校：</span>
+            <span class="infoContent"><{$userInfo.user_school}></span>
+        </div>
+        <div class="editInfo">
+            <span class="infotag">年级：</span>
+            <span class="infoContent" id="grade"><{$userInfo.user_grade}></span>
+        </div>
+        <div class="editInfo">
+            <span class="infotag">专业：</span>
+            <span class="infoContent" id="major"><{$userInfo.user_major}></span>
+        </div>
+        <div class="editInfo">
+            <span class="infotag">邮箱：</span>
+            <span  class="infoContent"><{$userInfo.user_email}></span>
+        </div>
+        <div class="editInfo">
+            <span class="infotag">QQ：</span>
+            <span class="infoContent" id="qq"><{$userInfo.user_qq}></span>
+        </div>
+        <div class="editInfo">
+            <span class="infotag">电话：</span>
+            <span class="infoContent" id="phone"><{$userInfo.user_phone}></span>
+        </div>
+        <div class="editInfo">
+            <span class="infotag">现所在地：</span>
+            <span class="infoContent" id="place"><{$userInfo.user_place}></span>
+        </div>
+    </section>
+
+
+    <include file="Public:footer" />

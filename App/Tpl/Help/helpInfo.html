@@ -1,0 +1,56 @@
+<include file="Public:head" />
+<body>
+
+<div data-role="page" >
+    <div data-role="header" data-theme="b">
+        <h1>请你帮帮忙</h1>
+    </div>
+
+    <section class="beHelpInfo">
+
+        <div class="beHelpPic">
+            <div><img class="chatpic" src="__PUBLIC__/image/default_avatar.jpeg" alt="好友头像"/></div>
+            <if condition="$helpInfo.user_id neq $Think.session.userId "><div class="answerButton"><button data-role="none">我来答</button></div>
+                <else />
+            </if>
+
+        </div>
+        <div class="chatContent questionContent">
+            <{$helpInfo.blog_content}>
+            <div class="time"><{$helpInfo.blog_time}></div>
+        </div>
+        <div class="blank"></div>
+    </section>
+
+    <section class="helpBigBox">
+        <div class="answerInput">
+            <div class="inputBigBox" >
+                <textarea rows="4" cols="20" data-role="none" name="" id="" class="inputBox" ></textarea>
+                <button class="helpButton" data-role="none" id="helpHim" beHelpId="<{$helpInfo.user_id}>">提交</button>
+                <div class="blank"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="answerRecord">
+        <empty name="helpList"><span style="padding: 5px;margin-left: 10px;">你知道吗？帮帮他吧</span><else />
+        <volist name="helpList" id="item" empty="$empty"  key="k">
+            <div class="oneAnswerRecord">
+                <div class="answerContent"><{$item.comment_content}></div>
+                <div class="answerInfo">
+                    <div class="answerTime"><{$item.comment_time}></div>
+                    <div class="likeHelp" cur-comment-user="<{$item.user_id}>" cur-user="<{$Think.session.userId}>" cur-comment-id="<{$item.comment_id}>" cur-blog-user-id="<{$helpInfo.user_id}>">
+                        <if condition="$item.isUseful eq 0 "><img class="likeIcon" src="__PUBLIC__/image/disLike.png" alt="赞"/>
+                            <else /><img class="likeIcon" src="__PUBLIC__/image/veryLike.png" alt="赞"/>
+                        </if>
+                        <span class="likeNum"> </span>
+                    </div>
+                    <div class="blank"></div>
+                </div>
+            </div>
+        </volist>
+        </empty>
+    </section>
+
+    <include file="Public:footer" />

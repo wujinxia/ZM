@@ -1,0 +1,36 @@
+<include file="Public:head" />
+<body>
+
+<section data-role="page">
+<section class="avatar">	                
+    <img class="avatarpic" src="__PUBLIC__/image/haha.jpg" alt=""/>
+</section>
+<form action="__APP__/Login/login"  method="post" target="_self">
+	<div class="input">
+		<div class="user">
+			<lable for="cardId" class="accoutIcon icon">
+
+			</lable>
+			<input type="text" data-role="none" name="cardId" id="cardId" placeholder="身份证号码" autofocus required />
+		</div>
+	    <div class="splite"><hr/></div>
+		<div class="password">
+			<lable for="password" class="passwordIcon icon">
+
+			</lable>
+			<input type="password" data-role="none" name="password" id="password" placeholder="请输入密码"  required />
+		</div>
+    </div>
+    <div class="tip" id="tip"></div>
+	<div class="submit">
+		<input class="login" type="button" id="login" data-role="none" value="登录" />
+	</div>
+</form>
+
+<footer class="forgetPassword">
+		<a href="__APP__/Register/index" target="_self" style="color:black;">注册帐号</a><span> | </span><a href="">忘记密码</a>
+</footer>
+</section> 
+
+</body>
+</html>

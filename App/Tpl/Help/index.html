@@ -1,0 +1,22 @@
+<include file="Public:head" />
+<body>
+
+<div data-role="page" >
+    <div data-role="header" data-theme="b">
+        <h1>大家来帮忙</h1>
+    </div>
+    <section>
+        <volist name="allHelpList" id="item" empty="$empty"  key="k">
+            <div class="helpBox">
+            <div class="oneQuestionInfo">
+                <div class="question"><a href="__APP__/Help/helpInfo?blogId=<{$item.blog_id}>&BeHelpId=<{$item.user_id}>" target="_self"><{$item.blog_content}></a></div>
+                <div>
+                    <div class="questionTime"><{$item.blog_time}></div>
+                    <div class="answerNumber"><{$item.commentCount}>人回答</div>
+                    <div class="blank"></div>
+                </div>
+            </div>
+            </div>
+        </volist>
+    </section>
+    <include file="Public:footer" />

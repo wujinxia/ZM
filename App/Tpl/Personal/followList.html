@@ -1,0 +1,33 @@
+<include file="Public:head" />
+<body>
+<div data-role="page" >
+    <div data-role="header" data-theme="b">
+        <div  class="inChat" ><a href="__URL__/chat" target="_self">进入群聊</a></div>
+        <h1>关注列表</h1>
+    </div>
+    <form class="">
+        <div class="box">
+            <div class="search"><input data-role="none" type="search" /></div>
+            <div class="searchButton">搜索</div>
+        </div>
+    </form>
+
+    <volist name="userInfo" id="item" empty="$empty"  key="k">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3><{$item.userSchool}></h3>
+                <volist name="item.userList" id="item1" empty="$empty"  key="j">
+                    <section class="userInfo friendInfo">
+                        <div class="personLeft"><img class="avatarpic newspic" src="__PUBLIC__/image/avatar/<{$item1.userAvatar}>" alt="好友头像"/></div>
+                        <div class="friendright">
+                            <p><{$item1.userName}></p>
+                            <p>RP:<{$item1.userRp}></p>
+                        </div>
+                        <button data-role="none">关注</button>
+                        <div class="blank"></div>
+                    </section>
+                </volist>
+            </div>
+        </div>
+    </volist>
+    <include file="Public:footer" />

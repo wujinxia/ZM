@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'comment_id', 1 => 'comment_user_id', 2 => 'comment_time', 3 => 'comment_blog_id', 4 => 'comment_content', '_autoinc' => true, '_pk' => 'comment_id', '_type' => array ( 'comment_id' => 'int(11)', 'comment_user_id' => 'int(11)', 'comment_time' => 'timestamp', 'comment_blog_id' => 'int(11)', 'comment_content' => 'text', ), );?>

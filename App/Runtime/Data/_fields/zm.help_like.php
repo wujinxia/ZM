@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'help_id', 1 => 'help_user_id', 2 => 'help_time', 3 => 'help_comment_id', '_autoinc' => true, '_pk' => 'help_id', '_type' => array ( 'help_id' => 'int(11)', 'help_user_id' => 'int(11)', 'help_time' => 'timestamp', 'help_comment_id' => 'int(11)', ), );?>

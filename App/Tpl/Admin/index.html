@@ -1,0 +1,82 @@
+<include file="Public:head" />
+<body>
+
+<div data-role="page" id="blogPage">
+    <div data-role="header" data-theme="b" data-position="fixed">
+        <h1>博客</h1>
+    </div>
+    <section class="">
+        <!-- <img class="toppic" src="image/topbanner.jpg" alt=""/> -->
+    </section>
+
+    <volist name="allNewsList" id="item" empty="$empty"  key="k">
+        <section class="news">
+            <div class="newTop">
+                <!--<a><img class="newspic" src="__PUBLIC__<{$item.user_avatar}>" alt="默认头像"/></a>-->
+                <a href="__APP__/Personal/myBlog?userId=<{$item.user_id}>" target="_self"><img class="newspic" src="__PUBLIC__/image/avatar/<{$item.user_avatar}>" alt="默认头像"/></a>
+                <div class="newsRight">
+                    <div class="useName"><a href="__APP__/Personal/myBlog?userId=<{$item.user_id}>" target="_self"><{$item.user_name}></a></div>
+                    <div><{$item.blog_time}></div>
+                </div>
+                    <span class="deletePic" blogId="<{$item.blog_id}>"><img src="__PUBLIC__/image/delete.png"></span>
+                <div class="blank"></div>
+            </div>
+            <div class="newsBody">
+                <a href="__APP__/Index/blogDetail?blogId=<{$item.blog_id}>" target="_self"><{$item.blog_content}></a>
+            </div>
+
+            <if condition="$item.blog_pic neq ''"><div><a href="__APP__/Index/blogDetail?blogId=<{$item.blog_id}>" target="_self"><img class="newsBodyPic" src="__PUBLIC__/upload/<{$item.blog_pic}>" alt=""/></a></div>
+            </if>
+
+            <!-- <div class="line"><hr/></div> -->
+            <div class="taglist">
+                <div class="newstag tagline"><span class="like" isLike="<{$item.isLike}>" cur-user="<{$Think.session.userId}>" cur-blog="<{$item.blog_id}>">
+                <if condition="$item.isLike eq 0 "><img class="i" src="__PUBLIC__/image/disLike.png" alt="赞"/>
+                    <else /><img class="i" src="__PUBLIC__/image/veryLike.png" alt="赞"/>
+                </if>
+                <span class="m"><{$item.likeCount}></span></span></div>
+                <div class="newstag"><a href="__APP__/Index/blogDetail?blogId=<{$item.blog_id}>" target="_self"><img class="i" src="__PUBLIC__/image/11764.png" alt="赞"/><span class="m">(<{$item.commentCount}>)</span></a></div>
+                <div class="blank"></div>
+            </div>
+        </section>
+    </volist>
+
+    <div data-role="footer" data-theme="b" data-position="fixed" data-tap-toggle="false">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="#blogPage" target="_self">博客管理</a></li>
+                <li><a href="#userPage" target="_self" data-transition="slide">用户管理</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div data-role="page" id="userPage" >
+    <div data-role="header" data-theme="b" data-position="fixed">
+        <h1> 仲明学子</h1>
+    </div>
+
+    <volist name="userList" id="item1" empty="$empty"  key="j">
+        <section class="userInfo friendInfo">
+            <div class="personLeft"><img class="avatarpic newspic" src="__PUBLIC__/image/avatar/<{$item1.user_avatar}>" alt="好友头像"/></div>
+            <div class="friendright">
+                <p><{$item1.user_name}></p>
+                <p>RP:<{$item1.user_rp}></p>
+            </div>
+            <button data-role="none" class="deleteUser" userId="<{$item1.user_id}>">注销</button>
+            <div class="blank"></div>
+        </section>
+    </volist>
+
+    <div data-role="footer" data-theme="b" data-position="fixed" data-tap-toggle="false">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="#blogPage" target="_self" data-transition="slide">博客管理</a></li>
+                <li><a href="#userPage" target="_self">用户管理</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>

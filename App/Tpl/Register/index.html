@@ -1,0 +1,30 @@
+<include file="Public:head" />
+<body>
+
+<section data-role="page">
+    <div data-role="header" data-theme="b" data-position="fixed">
+        <h1>注册帐号</h1>
+    </div>
+
+    <div class="register">
+        <div class="r"><input type="text" id="cardId" placeholder="身份证号码"/></div>
+        <div class="r"><input type="text" id="name" placeholder="姓名"/></div>
+        <div class="r"><input type="password" id="pa1" placeholder="密码"/></div>
+        <div class="r"><input type="password" id="pa2" placeholder="再输入一次"/></div>
+        <div class="r"><select id="school">
+            <option value ="中山大学" selected>中山大学</option>
+            <option value ="华南理工大学">华南理工大学</option>
+            <option value="暨南大学">暨南大学</option>
+            <option value="广东财经大学">广东财经大学</option>
+        </select></div>
+        <div class="r"><input type="email" id="email" placeholder="邮箱" required/></div>
+
+       <div id="registerTip"></div>
+        <div class="submit">
+            <input class="login" type="button" id="registerButton" data-role="none" value="注册" />
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

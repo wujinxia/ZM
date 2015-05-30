@@ -1,0 +1,71 @@
+<include file="Public:head" />
+<body>
+
+<div data-role="page" >
+    <div data-role="header" data-theme="b" data-position="fixed">
+        <a  data-rel="back">返回</a>
+        <h1>TA的心情</h1>
+    </div>
+    <section class="">
+        <!-- <img class="toppic" src="image/topbanner.jpg" alt=""/> -->
+    </section>
+
+    <section class="news">
+        <div class="newTop">
+            <a href="__APP__/Personal/myBlog?userId=<{$blogInfo.user_id}>" target="_self"><img class="newspic" src="__PUBLIC__/image/avatar/<{$blogInfo.user_avatar}>" alt="默认头像"/></a>
+            <div class="newsRight">
+                <div class="useName"><a href="__APP__/Personal/myBlog?userId=<{$blogInfo.user_id}>" target="_self"><{$blogInfo.user_name}></a></div>
+                <div><{$blogInfo.blog_time}></div>
+            </div>
+            <div class="blank"></div>
+        </div>
+        <div class="newsBody">
+            <{$blogInfo.blog_content}>
+        </div>
+
+        <if condition="$blogInfo.blog_pic neq ''"><div><img class="newsBodyPic" src="__PUBLIC__/upload/<{$blogInfo.blog_pic}>" alt=""/></div>
+        </if>
+        <div class="taglist">
+            <div class="newstag tagline"><span class="like" isLike="<{$blogInfo.isLike}>" cur-user="<{$Think.session.userId}>" cur-blog="<{$blogInfo.blog_id}>">
+                <if condition="$blogInfo.isLike eq 0 "><img class="i" src="__PUBLIC__/image/disLike.png" alt="赞"/>
+                    <else /><img class="i" src="__PUBLIC__/image/veryLike.png" alt="赞"/>
+                </if><span class="m"> 赞</span></span></div>
+            <div class="newstag"><a href="__URL__/comment?blogId=<{$blogInfo.blog_id}>" target="_self"><img class="i" src="__PUBLIC__/image/11764.png" alt="评论"/> <span class="m">评论</span></a></div>
+            <div class="blank"></div>
+        </div>
+    </section>
+
+    <div class="txt">
+        <span class="txtInfo p1">点赞 <{$blogInfo.likeCount}></span><span>  |  </span><span class="txtInfo p2" >评论 <{$blogInfo.commentCount}></span>
+    </div>
+    <div class="comment">
+        <empty name="commentList"><span style="padding: 5px;margin-left: 10px;">快来抢沙发评论吧</span><else />
+        <volist name="commentList" id="item" empty="$empty"  key="k">
+        <div class="commentBody">
+            <div>
+                <a href="__APP__/Personal/myBlog?userId=<{$item.user_id}>" target="_self"><img class="commentPic" src="__PUBLIC__/image/avatar/<{$item.user_avatar}>" alt="默认头像"/></a>
+                <div class="commentRight">
+                    <div><{$item.user_name}></div>
+                    <div><{$item.comment_time}></div>
+                </div>
+                <div class="blank"></div>
+            </div>
+            <div class="commentContent"><{$item.comment_content}></div>
+        </div>
+        </volist>
+        </empty>
+
+    </div>
+
+    <div class="likeList">
+        <empty name="likeList"><span style="padding: 5px;margin-left: 10px;">快来第一个赞吧</span><else />
+        <volist name="likeList" id="item" empty="$empty"  key="k">
+            <div class="oneLike">
+                <a href="__APP__/Personal/myBlog?userId=<{$item.user_id}>" target="_self"><img class="likePic" src="__PUBLIC__/image/avatar/<{$item.user_avatar}>" alt="默认头像"/></a>
+                <a href="__APP__/Personal/myBlog?userId=<{$item.user_id}>" target="_self"><span class="likeName"><{$item.user_name}></span></a>
+            </div>
+        </volist>
+        </empty>
+    </div>
+
+    <include file="Public:footer" />

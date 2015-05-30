@@ -1,0 +1,1022 @@
+body
+{
+	font-family:  'Arial','Microsoft YaHei';
+	background: rgb(242,242,242);
+}
+
+.avatarpic
+{
+	width: 80px;
+    height: 80px;
+	border: 2px solid #d5ddc7;
+}
+
+.avatar
+{
+	margin-top: 185px;
+	width: 100%;
+	margin:0 auto;
+	text-align:center;
+	padding-bottom: 40px;
+	padding-top: 80px;
+}
+/*登陆的按钮*/
+.submit
+{
+	padding-top:10px;
+	width: 95%;
+	margin:0 auto;
+}
+
+.login
+{
+
+	width: 90%;
+	margin-left: 5%;
+	height: 40px;
+	border-radius:8px;
+	background-color: rgb(255,130,0);
+	color: white;
+}
+/*退出的按钮*/
+.logout
+{
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    border-radius:8px;
+    background-color: rgb(255, 35, 30);
+    color: white;
+}
+.input
+{
+	background-color: white;
+}
+
+.icon
+{
+    background-image: url("../image/icon.png");
+    background-size: 30px auto;
+    float: left;
+    margin: 5px 15px 0 0;
+}
+
+.accoutIcon
+{
+    background-position: 0 -27px;
+    width: 30px;
+    height: 26px;
+}
+
+.passwordIcon
+{
+    background-position: 0 -54px;
+    width: 30px;
+    height: 26px;
+}
+
+input[type="text"],input[type="password"]
+{
+	border-style: none;
+	outline: medium;
+	width: 83%;
+	vertical-align: middle;
+	height: 30px;
+	border-radius:5px;
+}
+
+.splite
+{
+	width: 90%;
+	margin:0 auto;
+}
+
+.user,.password
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: white;
+	width: 95%;
+	margin:0 auto;
+	margin-bottom: 5px;
+}
+
+.tip
+{
+	color: rgb(255,130,0);
+	margin-left: 3%;
+    margin-top: 10px;
+}
+
+footer
+{
+	width:100%; 
+	margin:0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+ .forgetPassword a:link 
+{ 
+	text-decoration: none;
+	color:black;
+	font-weight:bold;
+} 
+
+a:link 
+{ 
+	text-decoration: none;
+	color:black;
+} 
+
+a:visited 
+{ text-decoration: none;color:black;}
+
+a:hover 
+{ 
+	text-decoration:none;
+	color:black;
+}
+
+a:active 
+{ 
+	text-decoration:blink;
+} 
+
+.zmpic
+{
+	width: 100%;
+    height: 50px;
+}
+
+.userInfo
+{
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 10px;
+	/* border: solid 1px black; */
+}
+
+.personLeft
+{
+	 /*border: solid 1px black;*/
+	margin-left: 5%;
+	float: left;
+}
+
+.info
+{
+	float: left;
+	margin-left: 5%;
+	/* border: solid 1px black; */
+	line-height:25px;
+}
+
+.info button
+{
+	border: solid 1px black;
+	/*float: left;*/
+	margin-top: 5px;
+    display: block;
+
+}
+
+.interest
+{
+	width: 98%;
+	margin: 0 auto;	
+	background-color: white;
+	padding: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/*border: solid 1px black;  */
+}
+
+.tag
+{
+	/* border: solid 1px black; */
+	width: 33%;
+	text-align: center;
+	float: left;
+	font-weight: normal;
+}
+
+.blank
+{
+	clear: both;
+}
+
+.toppic
+{
+	
+	width: 100%;
+}
+
+.news
+{
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: solid 1px rgb(218,218,218);
+	/* border-radius: 5px; */
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+.newTop
+{
+	 /*border: solid 1px red;*/
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.newspic
+{
+	width: 50px;
+    height: 50px;
+	border-radius: 10px;
+	float: left;
+}
+
+.newsRight
+{
+	font-size: 12.5px;
+	margin-left: 10px;
+	line-height: 25px;
+	padding: 2px;
+	float: left;
+}
+
+.useName
+{
+    font-size: 15px;
+}
+
+.newsBody
+{
+	/* border: solid 1px black; */
+	padding: 5px;
+    padding-left: 15px;
+}
+
+.newsBodyPic
+{
+	width: 100px;
+	margin-left: 15px;
+
+}
+
+.taglist
+{
+	width: 100%;
+    /*border: solid 1px black;*/
+	padding: 4px;
+	border-top: solid 1px rgb(218,218,218);
+    padding-top: 8px;
+    padding-bottom: 8px;
+	/*border-radius: 5px;*/
+}
+
+.i
+{
+    vertical-align: middle;
+}
+
+.forLike
+{
+    /*background-image: url("../image/111.png");*//*
+    background-size: 32px auto;
+    background:transparent url("../image/111.png") no-repeat scroll 50% 50%;
+    background-repeat: no-repeat;
+    background-position: 0 -16px;
+    width: 16px;
+    height: 16px;*/
+}
+
+.tagline
+{
+	border-right: solid 1px rgb(218,218,218);
+}
+
+.newstag
+{
+	/*border: solid 1px black;*/
+	width: 49.8%;
+	float: left;
+	text-align: center;
+	color: rgb(146,146,146);
+    vertical-align: middle;
+    font-size: 12.5px;
+	/* background-color: red; */
+}
+
+.m
+{
+    vertical-align: middle;
+    color: rgb(146,146,146);
+    /*border: solid 1px #000000;*/
+}
+
+.p2
+{
+    color: rgb(51,51,51);
+}
+
+.p1
+{
+    color: rgb(146,146,146);
+}
+
+.comment
+{
+    background-color: #ffffff;
+    padding-top: 5px;
+}
+
+.txt
+{
+    /*border: solid 1px #000000;*/
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ffffff;
+}
+
+.txtInfo
+{
+    /*border: solid 1px #000000;*/
+    padding: 3px;
+}
+
+.commentBody
+{
+    padding-top: 10px;
+    padding-left: 15px;
+    border-top: solid 1px rgb(218,218,218);
+    padding-bottom: 5px;
+}
+.commentPic
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    /* border: 2px solid Plum; */
+    float: left;
+}
+.commentRight
+{
+    font-size: 13px;
+    margin-left: 20px;
+    line-height: 20px;
+    color: grey;
+    padding: 2px;
+    float: left;
+}
+
+.commentContent
+{
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+.likeList
+{
+    padding-top: 5px;
+    background:#ffffff;
+    display: none;
+}
+.oneLike
+{
+    border-top: solid 1px rgb(218,218,218);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.likePic
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+
+.likeName
+{
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+hr
+{
+	height: 1px;
+	background-color: grey;
+	border: 0;
+}
+
+.friendInfo
+{
+	padding: 10px;
+	border-bottom: solid 1px black;
+}
+
+.friendIcon
+{
+	border-radius: 8px;
+}
+
+.friendright
+{
+	/* font-family:  'Arial','Microsoft YaHei'; */
+	font-size: 15px;
+	float: left;
+	/* border: solid 1px black; */
+	line-height:8px;
+	margin-left: 25px;
+}
+
+.friendInfo button
+{
+	border: solid 1px black;
+	float: right;
+	margin-right: 5%;
+	border-radius: 5px;
+}
+
+.personalInfo
+{
+	padding: 5px;
+	/* border: solid 1px black; */	
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.editInfo
+{
+	/* border: solid 1px black; */	
+	margin-top: 8px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 8px;
+	padding-left: 10%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: white;
+}
+
+#updateInfo
+{
+    border: solid 1px #000000;
+    text-align: center;
+    background-color: rgb(235,235,235);
+}
+
+.infotag
+{
+	font-weight: bold;
+}
+
+.infoContent
+{
+	margin-left: 10px;
+}
+
+/* chat.html */
+
+.chatInput
+{
+	width: 100%;
+	margin: 0 auto;
+	 border: solid 1px black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+}
+
+.inputBigBox
+{
+	width: 98%;
+	margin: 0 auto;
+    /*border: solid 1px black;*/
+}
+
+.chatButton
+{
+    float: right;
+    margin-top: 5px;
+}
+
+.inputBox
+{
+    display: inline;
+	width: 100%;
+	resize: none;
+    float:left;
+}
+
+.chatInput button
+{
+	margin-right: 5%;
+	margin-top: 10px;
+	float: right;
+	border-radius: 5px;
+}
+
+
+.chatRecordBox
+{
+    width: 98%;
+    margin: 0 auto;
+    /*border: solid 1px black;*/
+}
+
+.chatRecord
+{
+    width: 100%;
+    overflow-x:hidden;
+    resize: none;
+}
+
+.oneRecord
+{
+	/* border:solid 1px black; */
+	padding-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-bottom: 10px;
+}
+
+.chatTime
+{
+	font-size: 13px;
+	text-align: center;
+	padding: 5px;
+}
+
+.time
+{
+    font-size: 13px;
+    text-align: left;
+    padding-top: 5px;
+    color: rgb(146,146,146);
+    font-weight: normal;
+}
+
+.chatpic
+{
+	border: none;
+	float: left;
+	width: 50px;
+    height: 50px;
+	border-radius: 15px;
+}
+
+.chatContent
+{
+	width: 65%;
+	padding: 5px;
+	margin-left: 20px;
+	/*border: solid 1px grey;*/
+	border-radius: 5px;
+	font-size: 12px;
+	float: left;
+	color: black;
+	background-color: white;
+}
+
+.chatSendPic
+{
+	float: right;
+	width: 50px;
+	border-radius: 15px;
+	/* border:solid 1px black; */
+}
+
+.chatSendContent
+{
+	width: 65%;
+	padding: 5px;
+	margin-right: 20px;
+	/*border: solid 1px grey;*/
+	border-radius: 5px;
+	font-size: 12px;
+	float: right;
+	color: white;
+	background-color: rgb(16,140,255);
+}
+
+/* help.html */
+.beHelpInfo
+{
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	/* border:solid 1px black; */
+	background-color: white;
+}
+
+.questionContent
+{
+	font-size: 14px;
+	font-weight: normal;
+	border: none;
+}
+
+.answerInput
+{
+	display: none;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sendAnswerInput
+{
+    display: block;
+}
+
+.helpButton
+{
+    float: right;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.beHelpInfo button
+{
+	font-size: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.beHelpPic
+{
+	padding: 2px;
+	float: left;
+	/* border:solid 1px black; */
+}
+
+.oneAnswerRecord
+{
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	padding-bottom: 5px;
+	/* border:solid 1px red; */                      
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.answerContent
+{
+	width: 98%;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* border:solid 1px black; */
+	font-size: 12px;
+}
+
+.answerInfo
+{
+	padding-top: 5px;
+	/*border:solid 1px black;*/
+}
+
+.answerTime
+{
+	/*border:solid 1px black;*/
+	font-size: 13px;
+	float: left;
+	padding-left: 10px;
+	vertical-align: middle;
+ }
+
+.likeHelp
+{
+	float: right;
+	padding-right: 10px;
+}
+
+.likeIcon
+{
+	width: 13.5px;
+	float: left;
+	vertical-align: middle;
+	/* border:solid 1px black; */
+}
+
+.likeNum
+{
+	font-size: 13px;
+	vertical-align: middle; 
+	/* border:solid 1px black; */  
+	float: left;
+}
+
+/* writeBlog.html */
+
+.top
+{
+	/*border:solid 1px black;*/
+	
+	/*float: right;*/
+}
+
+.send
+{
+	float: right;
+    border: none;
+	margin-top: 6.2px;
+    margin-bottom: 6.2px;
+	margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    font-weight: normal;
+    background: rgb(245,245,245);
+    color: lightgrey;
+}
+
+.inChat
+{
+    float: right;
+    border: none;
+    margin-top: 6.2px;
+    margin-bottom: 6.2px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    font-weight: normal;
+    background: rgb(245,245,245);
+}
+
+.save
+{
+    float: right;
+    border: none;
+    margin-top: 6.2px;
+    margin-bottom: 6.2px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    font-weight: normal;
+    background: rgb(245,245,245);
+}
+
+.sendText
+{
+	width: 100%;
+	background-color: white;
+}
+
+.inputBlog
+{
+	width: 100%;
+	/*height: 150px;*/
+	overflow-x:hidden;
+	resize: none;
+	border-style: none;
+}
+
+
+.blogType
+{
+	width: 100%;
+	margin: 0 auto;	
+	border-bottom: solid 1px grey;
+	/* border: solid 1px red; */ 
+}
+
+.blogTypeName
+{
+	width: 33%;
+	/*border:solid 1px black;*/
+	text-align: center;
+	float: left;
+}
+
+.pic
+{
+	display: none;
+}
+
+.picIcon
+{
+	 /* border:solid 1px black; */ 
+	 width: 85px;
+	 height: 85px;
+	 float:left;
+	 margin: 5px;
+}
+
+.picUpload
+{
+	opacity:0;
+	/* border:solid 1px black; */
+	width: 85px;
+	height: 85px;
+	overflow:hidden; 
+	float:left;
+	margin: 5px;
+	margin-left: -86px; 
+
+}
+
+.imgUpload
+{
+	/* border:solid 1px black; */ 
+	
+	margin: 5px;
+	border: solid 1px grey;
+	float: left;
+}
+
+/*helpList.html*/
+.helpBox
+{
+    width: 100%;
+    background: #ffffff;
+    border-bottom: solid 1px rgb(146,146,146);
+
+}
+
+.oneQuestionInfo
+{
+    width: 95%;
+    margin:0 auto ;
+}
+
+.question
+{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.question a:link
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.question a:visited
+{
+    text-decoration: none;
+    color:#000000;;
+}
+
+.question a:hover
+{
+    text-decoration:none;
+    color:#000000;
+}
+
+.question a:active
+{
+    text-decoration:blink;
+}
+.questionTime
+{
+    float: left;
+    font-size: 10px;
+    color: rgb(146,146,146);
+}
+
+.answerNumber
+ {
+    float: right;
+    font-size: 10px;
+    color: rgb(146,146,146);
+ }
+
+.type
+{
+    margin-top: 20px;
+    background-color: white;
+}
+
+.typeIcon
+{
+    padding: 5px;
+}
+
+.line
+{
+    border-top: solid 1px rgb(218,218,218);
+    border-bottom: solid 1px rgb(218,218,218);
+}
+
+.littleIcon
+{
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.iconText
+{
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.changeButton
+{
+    width: 80px;
+    margin-top: 2px;
+}
+
+.changeAvatar
+{
+    display: block;
+    opacity:0;
+    width: 80px;
+    height: 80px;
+    overflow:hidden;
+    margin-top:-87px;
+    /*border: solid 1px black;*/
+}
+
+.changeAvatarTip
+{
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.change
+{
+    display: inline;
+}
+
+.register
+{
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    padding: 20px;
+}
+.container
+{
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.box
+{
+    display:-moz-box;
+    display:-webkit-box;
+    /*display:box;*/
+    width:98%;
+    margin: 0 auto;
+    /*border:1px solid black;*/
+}
+
+.search
+{
+    -moz-box-flex:1.0;
+    -webkit-box-flex:5.0;
+    box-flex:1.0;
+    padding: 5px;
+    /*border:1px solid red;*/
+}
+
+input[type="search"]
+{
+    width:100%;
+}
+
+.searchButton
+{
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.deletePic
+{
+    float:right;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
