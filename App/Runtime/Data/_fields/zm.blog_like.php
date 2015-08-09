@@ -1,1 +1,0 @@
-<?php	return array ( 0 => 'like_id', 1 => 'like_user_id', 2 => 'like_time', 3 => 'like_blog_id', '_autoinc' => true, '_pk' => 'like_id', '_type' => array ( 'like_id' => 'int(11)', 'like_user_id' => 'int(11)', 'like_time' => 'timestamp', 'like_blog_id' => 'int(11)', ), );?>

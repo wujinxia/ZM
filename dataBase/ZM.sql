@@ -75,3 +75,9 @@ create table zm_follow
 	follow_time timestamp NOT NULL default CURRENT_TIMESTAMP,
 	primary key(follow_id)
 )engine=innodb default charset=utf8;
+
+CREATE  TABLE home(
+	r_id int(11) not null auto_increment,
+	follow_time timestamp NOT NULL default CURRENT_TIMESTAMP,
+	primary key(r_id)
+)engine=innodb default charset=utf8;

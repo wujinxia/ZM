@@ -55,4 +55,9 @@ class AdminAction extends Action {
 		}
 	}
 
+	public function home(){
+		$this->display();
+	}
+
+
 }
